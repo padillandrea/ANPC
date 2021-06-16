@@ -2,7 +2,7 @@
 
 MATLAB and most other computing systems use the [IEEE Standard 754](https://en.wikipedia.org/wiki/IEEE_754) is a 52-bit base-2 fraction. The number 1023, called the bias, provides for negative and positive values of the exponent of the 2. The 64 bits used in this representation of , where `s` is a 1-bit unsigned integer, `e` is an 11-bit unsigned integer, and `f` is a 52-bit base-2 fraction. The number 1023, called the bias, provides for negative and positive values of the exponent of the 2. The 64 bits used in this representation of `x` can be arranged in memory as shown in the image below.
 
-![sign-esponent-mantissa](https://lcms-files.mathworks.com/content/images/ba181631-b501-4491-aef9-0ab2d9c5b721.png)
+![sign-esponent-mantissa](../images/sign-esponent-mantissa.png)
 
 For example, the real number `x = 1` has the binary representation
 
