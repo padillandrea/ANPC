@@ -1,6 +1,6 @@
 # Write a function to calculate the normalized sinc
 
-The rectangular function (or square-pulse) is commonly used in signal processing applications. The fourier transform of the rectangular function is the normalized sic function given by:
+The rectangular function (or square-pulse) is commonly used in signal processing applications. The Fourier transform of the rectangular function is the normalized sic function given by:
 
         sinc(x) = sin(pi * x) / (pi * x)
 
