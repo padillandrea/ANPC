@@ -6,7 +6,7 @@ MATLAB and most other computing systems use the [IEEE Standard 754](https://en.w
 
 For example, the real number `x = 1` has the binary representation
 
-        b = 001111111111000000000000000000000000000000000000000000000000000
+        b = 0011111111110000000000000000000000000000000000000000000000000000
 
 using this representation scheme. See the documentation for more information on [floating point numbers in MATLAB](https://la.mathworks.com/help/matlab/matlab_prog/floating-point-numbers.html).
 
@@ -26,11 +26,14 @@ Use the MATLAB function [`bin2dec`](https://www.mathworks.com/help/matlab/ref/bi
 function x = binary2Double(b)
 
 % Extract the sign, exponent, and mantissa bits from the string.
-
+sign = b(1);
+exp = b(2:12);
+mantissa = b(13:end);
 
 % Convert the bits to decimal values.
-
+e = bin2dec(exp);
+f = bin2dec(mantissa);
 
 % Convert to a real number using the IEEE Standard 754.
-x = 
+x = (-1) ^ sign * (2 ^ (e - 1023)) * (1 + f / 2 ^ -52);
 ```
