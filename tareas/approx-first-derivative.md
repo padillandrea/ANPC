@@ -35,5 +35,7 @@ function  df = firstDerCentered(f,h)
 
 % Compute the 5 point centered finite difference vector df.
 % Make sure the first and last two values of df are NaN.
-df =
+df = nan(size(f));
+i = 3:length(f) - 2;
+df(i) = (f(i - 2) - 8 * f(i - 1) + 8 * f(i + 1) - f(i + 2)) / (12 * h);
 ```
