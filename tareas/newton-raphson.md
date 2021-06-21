@@ -31,8 +31,21 @@ Your solution should not do the following:
 ```matlab
 function x = rfNewtonR(fun,x,TolX,itmax)
 % Find the root of f(x) = 0 using the Newton-Raphson method. 
-
-% Start the iteration.
-
-
+    i = 0;
+    flag = true;
+    
+    while flag
+        xp = x;
+        [fxp, dfxp] = fun(xp);
+        x = xp - fxp / dfxp;
+        i = i + 1;
+        
+        if i >= itmax
+            error('rfNewtonR:IterationLimitExceeded',...
+                'Iteration does not converge within the iteration limit.')
+        end
+        
+        flag = i < itmax && abs((x - xp) / x) > TolX;
+    end
+end
 ```
