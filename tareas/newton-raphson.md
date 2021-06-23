@@ -1,6 +1,6 @@
 # The Newton-Raphson Method
 
-The [Newton-Raphson method](https://en.wikipedia.org/wiki/Newton%27s_method) can be used to solve the root finding problem `f(x) = 0`. This is an open method, so it starts with a single initial estimate for the root. Given a current estimate for the root, `x`<sub>i</sub>. Thus, the Newton-Raphson formula for the next estimate of the root is given by the root of the tangent line:
+The [Newton-Raphson method](https://en.wikipedia.org/wiki/Newton%27s_method) can be used to solve the root finding problem `f(x) = 0`. This is an open method, so it starts with a single initial estimate for the root. Given a current estimate for the root, `x`<sub>`i`</sub>. Thus, the Newton-Raphson formula for the next estimate of the root is given by the root of the tangent line:
 
 ![root of the tangent line](../images/tangent_NR.jpg)
 
@@ -22,7 +22,7 @@ Your function should return the following output:
 
 Your solution should not do the following:
 
-1. Implement the Newton Raphson method to find a root of `f(x) = 0` and print the iteration history. <u>Do not use the MATLAB solver functions like `fzero`, `solve`, `roots`, etc.</u>.
+1. Implement the Newton Raphson method to find a root of `f(x) = 0` and print the iteration history. <u>Do not use the MATLAB solver functions like `fzero`, `solve`, `roots`, etc.</u>..
 
 2. Terminate the search when the relative error tolerance is reached or when the iteration limit is reached (whichever occurs first).
 
