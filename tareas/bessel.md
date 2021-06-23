@@ -4,6 +4,20 @@ For a cylindrical container, the shape of standing waves is described using a sp
 
 ![bessel](../images/bessel.png)
 
+Write a script to find the location of the first six extrema for surface waves in a cylindrical container using Bessel functions and the MATLAB function [`fzero`](https://www.mathworks.com/help/matlab/ref/fzero.html). Your script should do the following:
+
+1. Use the MATLAB function [`besselj(n,x)`](https://www.mathworks.com/help/matlab/ref/besselj.html) to create an [anonymous function](https://www.mathworks.com/help/matlab/matlab_prog/anonymous-functions.html), `bessel0`, corresponding to `J`<sub>`0`</sub>`(x)`.
+
+2. In a similar manner, create the anonymous function `bessel1` corresponding to `J`<sub>`1`</sub>`(x)`.
+
+3. Use `fzero` and `bessel1` to find the first six extrema of the surface waves to a relative accuracy of `1e-8`. Use the plot above to obtain estimates for the extrema locations. An optimization options variable (`options`) containing the tolerance setting has already been created for you. It should be supplied to `fzero` as the last input argument after the function handle and the estimate of the root location/interval.*
+
+4. Store the locations of the extrema **in ascending order** in the row vector, `r`.
+
+5. Store the corresponding values of `J`<sub>`0`</sub> in the row vector, `J`.
+
+***Note**: Solver options such as the numerical tolerance on the function values or root location can be provided as an additional input to `fzero`. The options should be stored in an options variable created by the [`optimset`](https://www.mathworks.com/help/matlab/ref/optimset.html) function. See the `fzero` and `optimset` documentation for more information and examples.
+
 ## Script
 
 ```matlab
