@@ -13,5 +13,5 @@ x = Ax / ||Ax||
 If x was the exact eigenvector, we could just multiply Ax and see how much each component increased: they would all increase (or decrease) by the same factor. But, for an approximate eigenvector, each component of `Ax` will increase by a slightly different amount. Instead, the most common approach is to use the Rayleigh quotient. If we have an exact eigenvector, so that `Ax = λx`, then the Rayleigh quotient will gives us exactly `λ`. Otherwise, it is a kind of weighted-average and is a reasonable approximation
 
 ```
-λ = x * Ax / x * x
+λ = (x * Ax) / (x * x)
 ```
