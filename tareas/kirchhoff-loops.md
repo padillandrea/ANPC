@@ -23,7 +23,7 @@ Your solution should:
 V = [9 ; 1.5 ; 3]; % Volts
 
 % Equation coefficients
-R = [18, -2, 0 ; -2 11 -8 ; 0 -8 22]; % Ohms
+R = [(6 + 2 + 10), -2, 0 ; -2, (2 + 1 + 8), -8 ; 0, -8, (9 + 5 + 8)]; % Ohms
 
 % Solve for current
 I = R \ V;
