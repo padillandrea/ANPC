@@ -61,6 +61,11 @@ Al finalizar el curso, los alumnos deberán ser capaces de:
 
 3. Ecuaciones diferenciales ordinarias
 
+    + [Ecuaciones diferenciales ordinarias](docs/Ecuaciones%20diferenciales.pdf)
+    + [Solución analítica de ecuaciones diferenciales ordinarias sencillas: primer orden](docs/ODE%20primer%20orden.pdf)
+    + + [Solución analítica de ecuaciones diferenciales ordinarias sencillas: matriz coeficientes constantes](docs/ODE%20matriz%20coeficientes%20constantes.pdf)
+    + + [Solución analítica de ecuaciones diferenciales ordinarias sencillas: segundo orden coeficientes constantes](docs/ODE%20segundo%20orden%20coeficientes%20constantes.pdf)
+
 4. Ecuaciones diferenciales parciales (lineales de segundo orden)
 
 ## Recursos más usados
