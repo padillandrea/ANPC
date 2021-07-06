@@ -55,6 +55,7 @@ Al finalizar el curso, los alumnos deberán ser capaces de:
     + [Video números "complejos" 1](https://youtu.be/f079K1f2WQk)
     + [Video números "complejos" 2](https://youtu.be/IUTGFQpKaPU)
     + [Video Simplex matricial](https://youtu.be/21lkV3r8r-4)
+    + [Diferenciación de matrices](docs/MatrixDifferentiation.pdf)
     + [Valores y vectores propios](docs/Eigenvectores.pdf)
     + [Números complejos](docs/Complejos.pdf)
     + [Índices de matrices](docs/Indexing.pdf)
